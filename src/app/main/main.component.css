@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  height: 100%;
+}
+.left {
+  min-width: 200px;
+  background-color: #33235a;
+  flex-basis: 16%;
+  padding: 30px;
+}
+.right {
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 84%;
+  padding: 40px;
+}
+.width {
+  flex-basis: 49%;
+}
+.title {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 43px;
+  font-weight: 100;
+}
+p {
+  margin: 5px;
+  color: #aaa;
+  font-weight: 200;
+  font-size: 21px;
+}

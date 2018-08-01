@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="title">Items</div>
+  <form #f class="enter">
+    <input #input type="text" placeholder="Type name here..." required>
+    <button type="button" (click)="add(input.value)">Add new</button>
+  </form>
+  <div  *ngIf="items">
+    <div *ngFor="let item of items; index as i" class="items" [attr.data-selected]="false"
+         (click)="hightlight(i)"
+         [class.active]="hightlightStatus[i]"  >
+      <div class="content">
+        <div class="content-text">{{item.title}}</div>
+        <div class="content-comments">{{item.comments.length}}</div>
+      </div>
+      <button type="button" class="delete" (click)="delete(i)">Delete</button>
+    </div>
+  </div>
+</div>

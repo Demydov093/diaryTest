@@ -1,0 +1,64 @@
+.container {
+  min-height: 400px;
+  border-radius: 4px;
+  box-shadow: 0 0 7px #888888;
+  padding: 20px 30px 30px;
+}
+.title {
+  color: grey;
+  font-size: 38px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.right {
+  font-weight: 300;
+  color: gray;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.comments {
+  display: flex;
+  border-bottom: solid 1px #aaaa;
+  padding: 20px 0;
+}
+
+.figure-orange {
+  width: 75px;
+  height: 75px;
+  margin-right: 20px;
+  background-color: orange;
+}
+
+.figure-blue {
+  width: 75px;
+  height: 75px;
+  margin-right: 20px;
+  background-color: blue;
+}
+
+.figure-grey {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: lightgrey;
+}
+
+.content {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.comments-area {
+  display: flex;
+  padding: 20px 0;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  line-height:1.4;
+  width:100%;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="title">Comments</div>
+  <div class="content">
+    <div *ngFor="let item of comments; index as i" class="comments">
+      <div class="left">
+        <div [class.figure-orange]="i || !i%2" [class.figure-blue]="i%2" ></div>
+      </div>
+      <div class="right">
+        <div>{{item}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="comments-area" *ngIf="showTextarea">
+    <div class="left">
+      <div class="figure-grey"></div>
+    </div>
+    <div class="right">
+      <textarea #comment rows="3" cols="60" type="text"></textarea>
+    </div>
+  </div>
+</div>
